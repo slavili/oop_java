@@ -9,10 +9,11 @@ public class PointMethod {
 
     public static void main(String[] args) {
 
-        Point2D a = new Point2D(0,2);
+        //Point2D a = new Point2D(0,2);
+        Point2D a = new Point2D();
         System.out.println(a.toString());
 
-        Point2D b = new Point2D();
+        Point2D b = new Point2D(30);
 
         System.out.println(b.toString());
 

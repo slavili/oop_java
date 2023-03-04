@@ -5,12 +5,10 @@ public class Point2D {
         this.y = valueY;
     }
     public Point2D(int value){
-        this.x = value;
-        this.y = value;
+        this(value, value);
     }
     public Point2D(){
-        this.x = 0;
-        this.y = 0;
+        this(0);
     }
 
     public String getInfo(){
