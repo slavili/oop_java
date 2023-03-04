@@ -4,7 +4,7 @@ public class PointMethod {
         return Math.sqrt(Math.pow(x2-x1,2) + Math.pow(y2-y1,2));
     }
     static double distance(Point2D a, Point2D b){
-        return Math.sqrt(Math.pow(b.x-a.x, 2) + Math.pow(b.y-a.y,2));
+        return Math.sqrt(Math.pow(b.getX()-a.getX(), 2) + Math.pow(b.getY()-a.getY(),2));
     }
 
     public static void main(String[] args) {
@@ -19,7 +19,10 @@ public class PointMethod {
 
         System.out.println(distance(a, b));
 
+        a.setX(10);
+
         System.out.println(a.getInfo());
         System.out.println(b.getInfo());
+
         }
 }
