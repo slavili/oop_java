@@ -17,5 +17,8 @@ public class Point2D {
         return String.format("x: %d, y: %d", this.x, this.y);
     }
 
-
+    @Override
+    public String toString() {
+        return getInfo();
+    }
 }
